@@ -1,0 +1,258 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{gemini}
+\usepackage{graphicx}
+\usepackage{booktabs, csquotes, mathtools, hyperref}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[%bibencoding=utf8,   %biblatex ist das Paket für Bibliographyverwaltung, dass aber in beamer manchmal probleme macht.
+backend=bibtex8, %natbib=true,
+style=authoryear-icomp,
+%style=apa,
+%style=anne-kzfss, 
+%style=chicago-authoryear,
+%citestyle=authoryear,
+maxnames=3, minnames=1,
+sorting=nyt,
+hyperref=false,
+isbn=false,
+%month=false,
+url=false,
+doi=false,
+%bibencoding=auto
+%language=american
+]{biblatex}
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+\title{How neutralization theory can explain the concern-behaviour gap in pro-environmental decision making}
+
+\author{Robert Neumann \inst{1} \& Guido Mehlkop \inst{2}}
+
+\institute[shortinst]{\inst{1} Technische Universität Dresden \samelineand \inst{2} University of Erfurt}
+
+% ====================
+% Footer (optional)
+% ====================
+
+\footercontent{
+ % \href{https://www.example.com}{https://www.example.com} \hfill
+  Nuffield Workshop Environmental Social Sciences II --- (July 28-30 2021) --- University of Oxford \hfill
+  \href{mailto:robert.neumann@tu-dresden.de}{mailto:robert.neumann@tu-dresden.de}}
+% (can be left out to remove footer)
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
+% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+
+% ====================
+% Body
+% ====================
+
+\begin{document}
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+\begin{block}{Introduction}
+
+\begin{itemize}
+\item \enquote{concern-behavior-gap} (Tam \& Chan 2017) reflects weak or ambiguous relationship between pro-environmental concern and pro-environmental behavior
+\item Low-Cost hypothesis -- pro-environmental behavior only under the condition of low behavioral costs
+\item either implies a negative interaction effect between environmental concern and behavioral costs (Diekmann \& Preisendörfer 2003) or not (Best \& Kroneberg 2012; Tutic, Voss \& Liebe 2017)
+\item varying evidence, dependent on model choice, LCH tried to reconcile results, but has raised additional question 
+\end{itemize}
+
+  \end{block}
+
+   \begin{alertblock}{Theory}
+
+ \heading{Why is the concern-behavior gap persistent?}
+
+
+%\begin{itemize}
+%\item Max Weber: difference between ethics of absolute conviction and ethics of responsibility 
+\begin{itemize}
+\item pro-environmental actions to mitigate climate change represents collective action problem
+\item contributions depend on values and convictions, which follow hierarchical order, internal and external constraints subject to deliberation (Opp 1999)
+\item necessary to account for the normative desirability of going green (Keuschnigg \& Kraatz 2019), for dissonance avoidance (Festinger 1954), hence for the psychological costs or negative emotions (Steg et al. 2014) of free-riding
+\end{itemize}
+
+\heading{Theory of Neutralization}
+ \begin{itemize}
+\item Sykes \& Matza (1957) expanded theory to explain white-collar crime 
+\item why do actors break the law despite showing general norm acceptance?
+\item they neutralize norm violations ex-ante 
+\end{itemize}
+
+\heading{Context of pro-environmental actions}
+
+\begin{itemize}
+\item previous attempts on very small samples or qualitative in nature (Schahn et al. 1995; Chatzidakis et al 2007; Gruber \& Schleglmilch 2014)
+\item Best \& Kroneberg (2012: 557): \enquote{The costliness of a situation motivates actors not only to choose actions that weigh the relevant incentives, but also to search for a definition of the situation that neutralizes the feelings of obligation resulting from their own environmental awareness.}
+\item \enquote{\dots According to Diekmann and Preisendörfer, this is relatively easy in the environmental sphere, since actors can point to their own powerlessness in the face of the collective action problem or to contributions already made in the form of other (less costly) ecological behaviors.}  (our translation)
+\end{itemize}
+
+\heading{Five techniques of neutralization}
+
+Our measures from the GESIS Panel (wave ddbk)
+
+\begin{itemize}
+\item \textbf{denial of responsibility} -- \enquote{No matter how you act as a consumer, environmental destruction will continue.}
+\item \textbf{appeal to higher loyalties} -- \enquote{For the sake of my family, I cannot afford to make large expenditures for environmental protection.}
+\item \textbf{condemning the condemners} -- \enquote{Many self-proclaimed environmentalists are hypocrites.}
+\item \textbf{denial of injury}-- \enquote{The environmental damage caused by me personally is minimal.}
+\item \textbf{denial of victim} -- \enquote{Today, because of environmental protection, many things are unnecessarily banned.}
+	\end{itemize}
+
+%\heading{Hypotheses}
+%\begin{itemize}
+%	\item environmental concern $\xrightarrow{+}$ pro-environmental behavior
+%	\item []
+%	\item normative expectations $\xrightarrow{+}$ pro-environmental behavior
+%	\item []
+%	\item neutralization $\xrightarrow{+}$ pro-environmental behavior
+%	\item []
+%	\item negative interaction between neutralization $\times$environmental concern on pro-environmental behavior
+%	\item negative interaction between $\times$ normative expectations on pro-environmental behavior
+%	\end{itemize}
+
+ \end{alertblock}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+   \begin{block}{Data and Methods}
+\begin{itemize}
+	\item data from 5 waves of the GESIS panel (2015-2019)
+\end{itemize}
+\heading{Outcome measure}
+
+ \begin{figure}
+	\centering
+		\includegraphics[width=0.75\textwidth]{Figure0}
+		\caption{Do you have a renewable energy contract or do you intent to purchase one in the near future? Answers from 5 waves (n=3445). Source: Best \& Dannwolf (2015)}
+	\label{fig:Figure0}
+\end{figure}	
+
+\begin{table}
+	\small{
+	\centering
+		\caption{Descriptive statistics and measurement of the outcome variable}}
+		\begin{tabular}{p{4cm}ccccc}
+	\midrule
+						&    &   \multicolumn{2}{c}{Coding}      &\multicolumn{2}{c}{total}\\
+	Response &Value& Model 1   & Model 2*  & n         &   \%      \\ 
+  \midrule
+	Yes, I already use & 1& 1&1 & 5.149 &   33.00     \\[0.2cm]
+	I plan to  & 2& 0&0 & 1.164 &     7.46     \\[0.2cm]
+	Maybe in the future& 3& 0&0 & 4.975 &    31.88          \\[0.2cm]
+	No & 4& 0&. & 1.880 &  12.05              \\[0.2cm]
+	Don't know & 5& .&. & 2.436 &    15.61       \\[0.2cm]
+	\midrule
+	Total (n=3445)     &  &  &  & 15.604 &   100.00       \\
+	\midrule
+	\multicolumn{4}{l}{* Results from model 2 not shown}\\
+	\end{tabular}
+\end{table}
+
+\heading{Explanatory variables}
+\begin{itemize}
+	\item environmental concern: mean score from 9 items of Diekmann-Preisendörfer-scale (RMSEA=0.078; SRMR=0.043; $\alpha=0.88$)
+	\item normative expectations: mean score from 2 items reflecting expectations by friend/family of purchasing green energy products
+	\item neutralization: mean score from 7 items (RMSEA=0.070; CFI=0.956; SRMR=0.035; $\alpha=0.88$)
+	\item adjusted net-equivalent household income (logs taken and mean centered)
+	\item sex, age, age$^{2}$ and wave dummies
+\end{itemize}
+\end{block}
+ 
+
+\end{column}
+
+\separatorcolumn
+
+
+\begin{column}{\colwidth}
+
+\begin{block}{Results I}
+
+   \begin{figure}
+	\centering
+		\includegraphics[width=0.75\textwidth]{Figure3}
+		\caption{Estimation results from two multilevel logistic regression models with varying intercepts}
+\end{figure}
+
+\end{block}
+
+
+
+  \begin{block}{Results II}
+
+   \begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{Figuremitnein}
+		\caption{Conditional effect plot of the average marginal interaction effect between neutralization and environm. concern (left) and normative expectations (right)}
+\end{figure}
+
+  \end{block}
+
+  \begin{block}{Conclusion \& Limitations}  
+	\begin{itemize}
+		\item env. concern and normative expectations will only guide action 
+if no possibility of neutralization is available or learned
+    \item other explanations besides neutralization possible, e.g.  status quo bias when signing green energy contracts
+	\end{itemize}
+\end{block}
+
+  \begin{block}{References}
+Download the references on \href{https://github.com/robertneumanntud/neutralization.git}{github}.
+    %\nocite{*}
+    %\footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
